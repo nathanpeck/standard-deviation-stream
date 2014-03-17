@@ -1,0 +1,36 @@
+{
+  "name": "standard-deviation-stream",
+  "description": "A basic method for calculating standard deviation on the fly from a stream of numbers.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Nathan Peck",
+    "email": "nathan@storydesk.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathanpeck/standard-deviation-stream.git"
+  },
+  "main": "./lib/standard-deviation-stream.js",
+  "dependencies": {
+    "redis": "0.10.0"
+  },
+  "devDependencies": {
+    "mocha":  "1.17.1",
+    "chai":   "1.8.1",
+    "async":  "0.2.10",
+    "lodash": "2.2.1"
+  },
+  "keywords": [
+    "standard deviation",
+    "statistics",
+    "stream"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "mocha -R spec -s 100 ./tests/test.js"
+  }
+}
