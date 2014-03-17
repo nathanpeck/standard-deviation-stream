@@ -9,7 +9,7 @@ Basic Example
 
 Just get the standard deviation on some numbers.
 
-```
+```javascript
 var DeviationStream = require('standard-deviation-stream);
 
 var numbers = new DeviationStream();
@@ -41,7 +41,7 @@ Now the next time the web endpoint is called to fetch the next page of 100 resul
 cache and continue calculating the standard deviation on the next 100 items, taking into account the mean and variance
 of the first 100 items that you fetched in the previous request.
 
-```
+```javascript
 var async = require('async');
 var DeviationStream = require('standard-deviation-stream);
 
@@ -70,3 +70,13 @@ async.series(
 
 By default the save function stores the standard deviation stream data in a Redis key with an expiration of one hour.
 This allows you to continue adding more items to a stream based on that key at any time within an hour.
+
+Installation & Testing
+----------------------
+
+```
+npm install standard-deviation-stream
+npm test
+```
+
+To run the tests on the Redis enhanced capability you'll need to be running Redis locally on port 6379
