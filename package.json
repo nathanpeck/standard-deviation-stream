@@ -1,7 +1,7 @@
 {
   "name": "standard-deviation-stream",
   "description": "A basic method for calculating standard deviation on the fly from a stream of numbers.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Nathan Peck",
     "email": "nathan@storydesk.com"
