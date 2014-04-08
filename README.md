@@ -10,7 +10,7 @@ Basic Example
 Just get the standard deviation on some numbers.
 
 ```javascript
-var DeviationStream = require('standard-deviation-stream);
+var DeviationStream = require('standard-deviation-stream');
 
 var numbers = new DeviationStream();
 
@@ -43,7 +43,7 @@ of the first 100 items that you fetched in the previous request.
 
 ```javascript
 var async = require('async');
-var DeviationStream = require('standard-deviation-stream);
+var DeviationStream = require('standard-deviation-stream');
 
 var numbers = new DeviationStream('someResults', redisConnection);
 
