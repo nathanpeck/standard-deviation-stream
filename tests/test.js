@@ -126,6 +126,28 @@ describe('Standard Deviation Stream', function () {
     });
   });
 
+  describe('Attempting to use Redis operations without specifying a Redis client', function () {
+    var nonRedisDeviation = new DeviationStream('test');
+
+    it('Attempting to save state should return an error', function () {
+      nonRedisDeviation.save(function (err) {
+        expect(err).to.be.a('string');
+      });
+    });
+
+    it('Attempting to restore state should return an error', function () {
+      nonRedisDeviation.restore(function (err) {
+        expect(err).to.be.a('string');
+      });
+    });
+
+    it('Attempting to clear state should return an error', function () {
+      nonRedisDeviation.clear(function (err) {
+        expect(err).to.be.a('string');
+      });
+    });
+  });
+
   describe('Another sanity test', function () {
     before(function () {
       _.each(
