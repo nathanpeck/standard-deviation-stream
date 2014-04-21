@@ -1,7 +1,7 @@
 {
   "name": "standard-deviation-stream",
   "description": "A basic method for calculating standard deviation on the fly from a stream of numbers.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Nathan Peck",
     "email": "nathan@storydesk.com"
@@ -12,9 +12,9 @@
   },
   "main": "./lib/standard-deviation-stream.js",
   "dependencies": {
-    "redis": "0.10.0"
   },
   "devDependencies": {
+    "redis":  "0.10.0",
     "mocha":  "1.17.1",
     "chai":   "1.8.1",
     "async":  "0.2.10",
