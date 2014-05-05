@@ -1,6 +1,8 @@
 standard-deviation-stream
 =========================
 
+[![Build Status](https://travis-ci.org/nathanpeck/standard-deviation-stream.svg?branch=master)](https://travis-ci.org/nathanpeck/standard-deviation-stream)
+
 A Node.js method for finding the standard deviation of numbers arriving in a stream. Based on Donald Knuth's
 solution in Art of Computer Programming as [described by John D. Cook](http://www.johndcook.com/standard_deviation.html).
 
