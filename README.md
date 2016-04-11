@@ -21,6 +21,8 @@ console.log('Count: '+numbers.count());
 console.log('Mean: '+numbers.mean());
 console.log('Variance: '+numbers.variance());
 console.log('Standard Deviation: '+numbers.standardDeviation());
+console.log('Min: '+numbers.min());
+console.log('Max: '+numbers.max());
 
 numbers.clear();
 ```

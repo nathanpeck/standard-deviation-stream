@@ -70,6 +70,8 @@ describe('Standard Deviation Stream', function () {
       expect(testDeviation.count()).to.equal(30);
       expect(testDeviation.mean()).to.equal(50);
       expect(testDeviation.standardDeviation()).to.be.above(49).below(51);
+      expect(testDeviation.min()).to.equal(0);
+      expect(testDeviation.max()).to.equal(100);
     });
   });
 
@@ -96,6 +98,8 @@ describe('Standard Deviation Stream', function () {
       expect(restoredDeviation.count()).to.equal(30);
       expect(restoredDeviation.mean()).to.equal(50);
       expect(restoredDeviation.standardDeviation()).to.be.above(49).below(51);
+      expect(testDeviation.min()).to.equal(0);
+      expect(testDeviation.max()).to.equal(100);
     });
   });
 
@@ -123,6 +127,8 @@ describe('Standard Deviation Stream', function () {
       expect(testDeviation.mean()).to.equal(0);
       expect(testDeviation.variance()).to.equal(0);
       expect(testDeviation.standardDeviation()).to.equal(0);
+      expect(testDeviation.min()).to.equal(0);
+      expect(testDeviation.max()).to.equal(0);
     });
   });
 
@@ -163,6 +169,8 @@ describe('Standard Deviation Stream', function () {
       expect(testDeviation.count()).to.equal(50);
       expect(testDeviation.mean()).to.equal(50);
       expect(testDeviation.standardDeviation()).to.be.above(35).below(36);
+      expect(testDeviation.min()).to.equal(0);
+      expect(testDeviation.max()).to.equal(100);
     });
   });
 });
